@@ -1,9 +1,9 @@
 #restringe en qué computadoras un usuario puede iniciar sesión.
 #Para asignar una o varias estaciones de trabajo a un solo usuario:
-Set-ADUser -Identity "jepintocta" -LogonWorkstations "pcsegdatos1,srvcoeepo5"
+Set-ADUser -Identity "user" -LogonWorkstations "pc1,pc5"
 
 #Consultar
-Get-ADUser -Identity "jepintocta" -Properties userWorkstations
+Get-ADUser -Identity "user" -Properties userWorkstations
 
 #Eliminar todo 
-Set-ADUser -Identity "jepintocta" -Clear userWorkstations
+Set-ADUser -Identity "user" -Clear userWorkstations
