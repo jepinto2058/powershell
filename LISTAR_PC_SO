@@ -1,0 +1,1 @@
+Get-ADComputer -Filter 'OperatingSystem -like "*Windows X*"' -Properties *| Select-Object Name, OperatingSystem, IPv4Address, LastLogonDate
