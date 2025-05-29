@@ -4,6 +4,7 @@ Set-ADUser -Identity "user" -LogonWorkstations "pc1,pc5"
 
 #Consultar
 Get-ADUser -Identity "user" -Properties userWorkstations
+Get-ADUser -Identity "user" -Properties userWorkstations | select userWorkstations
 
 #Eliminar todo 
 Set-ADUser -Identity "user" -Clear userWorkstations
