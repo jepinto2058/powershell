@@ -1,6 +1,5 @@
-
-
-
+#restringe en qué computadoras un usuario puede iniciar sesión.
+#Para asignar una o varias estaciones de trabajo a un solo usuario:
 Set-ADUser -Identity "jepintocta" -LogonWorkstations "pcsegdatos1,srvcoeepo5"
 
 
