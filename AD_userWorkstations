@@ -1,1 +1,11 @@
 
+
+
+Set-ADUser -Identity "jepintocta" -LogonWorkstations "pcsegdatos1,srvcoeepo5"
+
+
+Get-ADUser -Identity "jepintocta" -Properties userWorkstations
+
+
+
+Set-ADUser -Identity "jepintocta" -Clear userWorkstations
